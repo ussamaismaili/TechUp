@@ -1,0 +1,30 @@
+@import "../../../styles/variables.scss";
+
+.SettingMode{
+    width: 60vw;
+    margin: auto;
+    padding: 10px;
+
+    font-family: $default-font;
+
+    h1{
+        margin: 2vh 0 2vh 0;
+
+        font-size: calc(( 100vw - 142px) / 71);
+    }
+    p {
+        font-size: $default-font-size;
+        line-height: 150%;
+    }
+}
+
+.SettingMode__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 100%;
+    margin: 2vh 0 2vh 0;
+    margin-top: 12%;
+    
+}
