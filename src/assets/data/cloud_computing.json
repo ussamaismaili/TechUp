@@ -1,0 +1,52 @@
+[
+    {
+        "english": "Cloud Computing",
+        "transcription": "klaʊd kəmˈpjuːtɪŋ",
+        "french": "Informatique en nuage"
+    },
+    {
+        "english": "Infrastructure as a Service (IaaS)",
+        "transcription": "ˌɪnfrəˈstrʌktʃər æz ə ˈsɜːrvɪs",
+        "french": "Infrastructure en tant que service (IaaS)"
+    },
+    {
+        "english": "Platform as a Service (PaaS)",
+        "transcription": "ˈplætfɔːrm æz ə ˈsɜːrvɪs",
+        "french": "Plateforme en tant que service (PaaS)"
+    },
+    {
+        "english": "Software as a Service (SaaS)",
+        "transcription": "ˈsɒftwɛər æz ə ˈsɜːrvɪs",
+        "french": "Logiciel en tant que service (SaaS)"
+    },
+    {
+        "english": "Private Cloud",
+        "transcription": "ˈpraɪvɪt klaʊd",
+        "french": "Nuage privé"
+    },
+    {
+        "english": "Public Cloud",
+        "transcription": "ˈpʌblɪk klaʊd",
+        "french": "Nuage public"
+    },
+    {
+        "english": "Hybrid Cloud",
+        "transcription": "ˈhaɪbrɪd klaʊd",
+        "french": "Nuage hybride"
+    },
+    {
+        "english": "Cloud Storage",
+        "transcription": "klaʊd ˈstɔːrɪdʒ",
+        "french": "Stockage en nuage"
+    },
+    {
+        "english": "Virtual Machine",
+        "transcription": "ˈvɜːrtʃuəl məˈʃiːn",
+        "french": "Machine virtuelle"
+    },
+    {
+        "english": "Serverless Computing",
+        "transcription": "ˈsɜːrvərlɪs kəmˈpjuːtɪŋ",
+        "french": "Informatique sans serveur"
+    }
+]

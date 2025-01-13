@@ -1,0 +1,52 @@
+[
+    {
+        "english": "Artificial Intelligence",
+        "transcription": "ˌɑːrtɪˈfɪʃl ɪnˈtelɪdʒəns",
+        "french": "Intelligence artificielle"
+    },
+    {
+        "english": "Machine Learning",
+        "transcription": "məˈʃiːn ˈlɜːrnɪŋ",
+        "french": "Apprentissage automatique"
+    },
+    {
+        "english": "Deep Learning",
+        "transcription": "diːp ˈlɜːrnɪŋ",
+        "french": "Apprentissage profond"
+    },
+    {
+        "english": "Neural Network",
+        "transcription": "ˈnʊrəl ˈnɛtwɜːrk",
+        "french": "Réseau neuronal"
+    },
+    {
+        "english": "Natural Language Processing",
+        "transcription": "ˈnætʃrəl ˈlæŋɡwɪdʒ ˈprɑːsesɪŋ",
+        "french": "Traitement du langage naturel"
+    },
+    {
+        "english": "Computer Vision",
+        "transcription": "kəmˈpjuːtər ˈvɪʒən",
+        "french": "Vision par ordinateur"
+    },
+    {
+        "english": "Reinforcement Learning",
+        "transcription": "ˌriːɪnˈfɔːrsmənt ˈlɜːrnɪŋ",
+        "french": "Apprentissage par renforcement"
+    },
+    {
+        "english": "Generative AI",
+        "transcription": "ˈdʒɛnərətɪv eɪ aɪ",
+        "french": "IA générative"
+    },
+    {
+        "english": "Supervised Learning",
+        "transcription": "ˈsuːpərˌvaɪzd ˈlɜːrnɪŋ",
+        "french": "Apprentissage supervisé"
+    },
+    {
+        "english": "Unsupervised Learning",
+        "transcription": "ʌnˈsuːpərˌvaɪzd ˈlɜːrnɪŋ",
+        "french": "Apprentissage non supervisé"
+    }
+]
