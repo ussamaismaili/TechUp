@@ -1,0 +1,33 @@
+@import '../../styles/variables.scss';
+
+.Footer-wrapper {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-top: 1px solid $border-color;
+    margin-top: 5%;
+}
+
+.Footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 60vw;
+    height: 10vh;
+    margin: auto;
+    padding: 10px;
+    margin-top: 2%;
+
+    &__left, &__right {
+        font-family: $default-font;
+        font-size: calc((100vw + 256px) / 128);
+    }
+
+    &__right {
+        text-align: right;
+
+        .app-name {
+            font-weight: bold;
+            color: $main-color;
+        }
+    }
+}
