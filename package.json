@@ -22,7 +22,7 @@
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
-    "build": "PUBLIC_URL=/ npm run build",
+    "build": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint -c .eslintrc --ext .js,.jsx .",
