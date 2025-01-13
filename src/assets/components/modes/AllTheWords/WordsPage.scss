@@ -1,0 +1,59 @@
+@import "../../../styles/variables.scss";
+
+.WordsPage {
+    width: 80vw;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    font-family: $default-font;
+    font-size: $default-font-size;
+
+    .WordsPage__nav {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+
+        a {
+            text-decoration: none;
+            color: $main-color;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            border: 1px solid $main-color;
+            border-radius: 5px;
+            transition: background-color $default-transition-duration, color $default-transition-duration;
+
+            &:hover {
+                background-color: $main-color;
+                color: white;
+            }
+        }
+    }
+
+    .WordsPage__category {
+        margin-bottom: 40px;
+
+        &__title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: $main-color;
+        }
+
+        &__list {
+            list-style: none;
+            padding: 0;
+
+            li {
+                padding: 10px;
+                border: 1px solid $main-color;
+                border-radius: 5px;
+                margin-bottom: 10px;
+                transition: background-color $default-transition-duration;
+
+                &:hover {
+                    background-color: $main-color;
+                    color: white;
+                }
+            }
+        }
+    }
+}
