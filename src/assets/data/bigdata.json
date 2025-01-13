@@ -1,0 +1,153 @@
+[
+    {
+        "english": "Data",
+        "transcription": "ˈdeɪtə",
+        "french": "Données"
+    },
+    {
+        "english": "Big Data",
+        "transcription": "bɪg ˈdeɪtə",
+        "french": "Big Data"
+    },
+    {
+        "english": "Data Mining",
+        "transcription": "ˈdeɪtə ˈmaɪnɪŋ",
+        "french": "Extraction de données"
+    },
+    {
+        "english": "Machine Learning",
+        "transcription": "məˈʃiːn ˈlɜːrnɪŋ",
+        "french": "Apprentissage automatique"
+    },
+    {
+        "english": "Artificial Intelligence",
+        "transcription": "ˌɑːrtɪˈfɪʃl ɪnˈtelɪdʒəns",
+        "french": "Intelligence artificielle"
+    },
+    {
+        "english": "Data Analysis",
+        "transcription": "ˈdeɪtə əˈnæləsɪs",
+        "french": "Analyse des données"
+    },
+    {
+        "english": "Data Visualization",
+        "transcription": "ˈdeɪtə ˌvɪʒuələˈzeɪʃən",
+        "french": "Visualisation des données"
+    },
+    {
+        "english": "Cloud Computing",
+        "transcription": "klaʊd kəmˈpjuːtɪŋ",
+        "french": "Informatique en nuage"
+    },
+    {
+        "english": "Data Lake",
+        "transcription": "ˈdeɪtə leɪk",
+        "french": "Lac de données"
+    },
+    {
+        "english": "Data Warehouse",
+        "transcription": "ˈdeɪtə ˈwɛrˌhaʊs",
+        "french": "Entrepôt de données"
+    },
+    {
+        "english": "Predictive Analytics",
+        "transcription": "prɪˈdɪktɪv ˌænəˈlɪtɪks",
+        "french": "Analyse prédictive"
+    },
+    {
+        "english": "Deep Learning",
+        "transcription": "diːp ˈlɜːrnɪŋ",
+        "french": "Apprentissage profond"
+    },
+    {
+        "english": "Neural Network",
+        "transcription": "ˈnʊrəl ˈnɛtwɜːrk",
+        "french": "Réseau neuronal"
+    },
+    {
+        "english": "Structured Data",
+        "transcription": "ˈstrʌktʃərd ˈdeɪtə",
+        "french": "Données structurées"
+    },
+    {
+        "english": "Unstructured Data",
+        "transcription": "ʌnˈstrʌktʃərd ˈdeɪtə",
+        "french": "Données non structurées"
+    },
+    {
+        "english": "Streaming Data",
+        "transcription": "ˈstriːmɪŋ ˈdeɪtə",
+        "french": "Données en flux"
+    },
+    {
+        "english": "Data Governance",
+        "transcription": "ˈdeɪtə ˈɡʌvərnəns",
+        "french": "Gouvernance des données"
+    },
+    {
+        "english": "Business Intelligence",
+        "transcription": "ˈbɪznəs ɪnˈtɛlɪdʒəns",
+        "french": "Intelligence d'affaires"
+    },
+    {
+        "english": "Natural Language Processing",
+        "transcription": "ˈnætʃrəl ˈlæŋɡwɪdʒ ˈprɑːsesɪŋ",
+        "french": "Traitement du langage naturel"
+    },
+    {
+        "english": "Internet of Things",
+        "transcription": "ˈɪntərˌnɛt əv ˈθɪŋz",
+        "french": "Internet des objets"
+    },
+    {
+        "english": "Data Scalability",
+        "transcription": "ˈdeɪtə ˌskeɪləˈbɪlɪti",
+        "french": "Évolutivité des données"
+    },
+    {
+        "english": "Metadata",
+        "transcription": "ˈmɛtəˌdeɪtə",
+        "french": "Métadonnées"
+    },
+    {
+        "english": "Data Sampling",
+        "transcription": "ˈdeɪtə ˈsæmplɪŋ",
+        "french": "Échantillonnage des données"
+    },
+    {
+        "english": "Data Retention",
+        "transcription": "ˈdeɪtə rɪˈtɛnʃən",
+        "french": "Rétention des données"
+    },
+    {
+        "english": "Anomaly Detection",
+        "transcription": "əˈnɒməli dɪˈtɛkʃən",
+        "french": "Détection d'anomalies"
+    },
+    {
+        "english": "Real-time Analytics",
+        "transcription": "ˈriːəl taɪm ˌænəˈlɪtɪks",
+        "french": "Analyse en temps réel"
+    },
+    {
+        "english": "Prescriptive Analytics",
+        "transcription": "prɪˈskrɪptɪv ˌænəˈlɪtɪks",
+        "french": "Analyse prescriptive"
+    },
+    {
+        "english": "Data Normalization",
+        "transcription": "ˈdeɪtə ˌnɔːrmələˈzeɪʃən",
+        "french": "Normalisation des données"
+    },
+    {
+        "english": "Data Pipeline",
+        "transcription": "ˈdeɪtə ˈpaɪplaɪn",
+        "french": "Pipeline de données"
+    },
+    {
+        "english": "ETL",
+        "transcription": "ˌiːtiːˈɛl",
+        "french": "ETL (Extraction, Transformation, Chargement)"
+    }
+]
+
