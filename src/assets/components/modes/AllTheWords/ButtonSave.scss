@@ -1,0 +1,13 @@
+@import "../../../styles/variables.scss";
+
+.ButtonSave{
+    grid-area: 2;
+}
+
+.disabled{
+    opacity: 0.2;
+}
+
+.disabled:hover{
+    opacity: 0.2;
+}
