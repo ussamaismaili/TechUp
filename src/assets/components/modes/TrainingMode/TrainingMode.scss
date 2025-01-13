@@ -1,0 +1,21 @@
+@import "../../../styles/variables.scss";
+
+.TrainingMode{
+    width: 60vw;
+    height: 80vh;
+    margin: auto;
+
+    font-family: $default-font;
+    font-size: $default-font-size;
+    font-weight: 500;
+}
+
+.Buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 70%;
+    height: 14%;
+    margin: auto;
+}
