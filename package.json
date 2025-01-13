@@ -2,7 +2,7 @@
   "name": "TechUp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "",
+ 
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -22,7 +22,7 @@
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
-    "build": "react-scripts build",
+    "build": "PUBLIC_URL=/ npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint -c .eslintrc --ext .js,.jsx .",
