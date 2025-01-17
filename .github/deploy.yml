@@ -29,4 +29,4 @@ jobs:
         with:
           branch: main  # Deploy to the main branch
           folder: build  # Folder that contains the build output
-          token: ${{ secrets.GITHUB_TOKEN }}  # Automatically use the GitHub token for authentication
+          # token: ${{ secrets.GITHUB_TOKEN }}  # Automatically use the GitHub token for authentication
