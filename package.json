@@ -17,30 +17,17 @@
     "sass": "^1.65.1",
     "web-vitals": "^2.1.4"
   },
-    "devDependencies": {
+  "devDependencies": {
     "react-scripts": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
-    "build": "gh-pages -d build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "lint": "eslint -c .eslintrc --ext .js,.jsx .",
-    "lint:fix": "npm run lint -- --fix",
+    "build": "react-scripts build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d public"
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "proxy": "http://google.com"
+    "production": [">0.2%", "not dead", "not op_mini all"],
+    "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
+  }
 }
