@@ -1,12 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import ButtonTrain from './ButtonTrain';
+import ButtonTrain from './ButtonTrain'
 import './SetOfWords.scss';
 
-export default function SetOfWords({ categoryName, categoryImage }) {
+export default function SetOfWords({ categoryName, categoryImage, onCategorySelect }) {
     return (
         <section className="SetOfWords">
-            <ButtonTrain />
+            <ButtonTrain category={categoryName} onCategorySelect={onCategorySelect} />
             <img src={categoryImage} alt={`${categoryName} Card Screensaver`} />
             <h3>{categoryName}</h3>
         </section>

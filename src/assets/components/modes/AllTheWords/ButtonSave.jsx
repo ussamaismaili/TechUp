@@ -20,7 +20,7 @@ export default function ButtonSave( props ) {
     return(
         <button className = { totalAbsentInputState ?  'Button ButtonSave disabled' : 'Button ButtonSave' } 
             disabled = { totalAbsentInputState ? true : false } onClick = { setState }>
-            <img  src = { Save } alt = "кнопка сохранить" />
+            <img  src = { Save } alt = "Save button" />
         </button>
     );
 };

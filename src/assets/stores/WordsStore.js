@@ -129,6 +129,45 @@ class WordsStore {
         };
     };
 
+    async loadWords(category) {
+        this.isLoading = true;
+        this.error = null;
+
+        try {
+            let response;
+            switch (category) {
+                case 'Big Data':
+                    response = await import('../data/bigdata.json');
+                    break;
+                case 'AI':
+                    response = await import('../data/ai_terms.json');
+                    break;
+                case 'Cloud Computing':
+                    response = await import('../data/cloud_computing.json');
+                    break;
+                default:
+                    throw new Error('Invalid category');
+            }
+
+            const words = response.default.map((word, index) => ({
+                ...word,
+                id: index + 1,
+                translation: word.french || word.translation,
+                category,
+            }));
+
+            runInAction(() => {
+                this.wordsAPI = words;
+                this.isLoading = false;
+            });
+        } catch (error) {
+            runInAction(() => {
+                this.error = error.message;
+                this.isLoading = false;
+            });
+        }
+    }
+
     async fetchWordsByCategory(category) {
         // Example API endpoint: `https://api.example.com/words?category=${category}`
         // Uncomment and modify the following lines to integrate with an actual API

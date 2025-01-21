@@ -10,7 +10,6 @@ export default function ButtonEdit({ onClick }){
     }
   
     return(
-        <img className = "Button ButtonEdit" src = { Edit } alt = "кнопка изменить" onClick = { setState }/>
+        <img className = "Button ButtonEdit" src = { Edit } alt = "Edit button" onClick = { setState }/>
     );
 }
-
