@@ -48,55 +48,5 @@
         "english": "Unsupervised Learning",
         "transcription": "ʌnˈsuːpərˌvaɪzd ˈlɜːrnɪŋ",
         "french": "Apprentissage non supervisé"
-    },
-    {
-        "english": "Artificial Neural Network",
-        "transcription": "ˌɑːrtɪˈfɪʃəl ˈnʊrəl ˈnɛtwɜːrk",
-        "french": "Réseau neuronal artificiel"
-    },
-    {
-        "english": "Convolutional Neural Network",
-        "transcription": "ˌkɒnvəˈluːʃənl ˈnʊrəl ˈnɛtwɜːrk",
-        "french": "Réseau neuronal convolutionnel"
-    },
-    {
-        "english": "Transfer Learning",
-        "transcription": "ˈtrænsfɜːr ˈlɜːrnɪŋ",
-        "french": "Apprentissage par transfert"
-    },
-    {
-        "english": "Recurrent Neural Network",
-        "transcription": "rɪˈkɜːrənt ˈnʊrəl ˈnɛtwɜːrk",
-        "french": "Réseau neuronal récurrent"
-    },
-    {
-        "english": "Support Vector Machine",
-        "transcription": "səˈpɔːt ˈvɛktər məˈʃiːn",
-        "french": "Machine à vecteurs de support"
-    },
-    {
-        "english": "Data Labeling",
-        "transcription": "ˈdeɪtə ˈleɪbəlɪŋ",
-        "french": "Étiquetage des données"
-    },
-    {
-        "english": "Generative Adversarial Network",
-        "transcription": "ˈdʒɛnərətɪv ædvɜːsˈɛəɹɪəl ˈnʊrəl ˈnɛtwɜːrk",
-        "french": "Réseau antagoniste génératif"
-    },
-    {
-        "english": "Backpropagation",
-        "transcription": "ˌbækprəʊpæˈɡeɪʃən",
-        "french": "Rétropropagation"
-    },
-    {
-        "english": "Dimensionality Reduction",
-        "transcription": "dɪˌmɛnʃəˈnælɪti rɪˈdʌkʃən",
-        "french": "Réduction de dimensionnalité"
-    },
-    {
-        "english": "Bias in AI",
-        "transcription": "baɪəs ɪn eɪ aɪ",
-        "french": "Biais dans l'IA"
     }
 ]
