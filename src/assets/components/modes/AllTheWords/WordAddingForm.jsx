@@ -115,7 +115,7 @@ const WordAddingForm = observer((props) => {
             </section>
             {<div className={(savePressed > 0) && Object.values(inputMistakes).join('') ?
                 'Word__warning Word__warning_showed' : 'Word__warning'}
-                ref={accordeonWord}>
+            ref={accordeonWord}>
                 {Object.values(inputMistakes).map((mistake, index) => {
                     return (
                         <div className="mistake" key={index}>{mistake}</div>

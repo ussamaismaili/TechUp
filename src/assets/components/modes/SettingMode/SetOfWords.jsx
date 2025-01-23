@@ -1,5 +1,5 @@
 import React from 'react';
-import ButtonTrain from './ButtonTrain'
+import ButtonTrain from './ButtonTrain';
 import './SetOfWords.scss';
 
 export default function SetOfWords({ categoryName, categoryImage, onCategorySelect }) {
