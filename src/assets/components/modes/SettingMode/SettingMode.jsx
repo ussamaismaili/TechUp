@@ -13,7 +13,7 @@ import './SettingMode.scss';
 export default function SettingMode({ onCategorySelect }) {
     return (
         <main className="SettingMode">
-            <h1>Enhance your Tech keywords testetete</h1>
+            <h1>Enhance your Tech keywords vvvv</h1>
             <p>
                 Here are sets of tech keyword cards, organized by topic, to help you learn French translations 
                 and memorize new keywords simultaneously. 
