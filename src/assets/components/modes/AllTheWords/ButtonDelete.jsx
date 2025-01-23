@@ -15,6 +15,6 @@ export default function ButtonDelete( props ){
     };
 
     return(
-        <img className = "ButtonDelete Button" src = { Delete } alt = "кнопка удалить" onClick = { handleClick }/>
+        <img className = "ButtonDelete Button" src = { Delete } alt = "Delete Button" onClick = { handleClick }/>
     );
 }                                                                                                               

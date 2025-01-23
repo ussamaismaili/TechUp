@@ -35,6 +35,10 @@ const App = observer((props) => {
         navigate('/game');
     };
 
+    const handleLogoClick = () => {
+        setSelectedCategory(null); // Reset the selected category when navigating back to the home page
+    };
+
     return (
         <>
             <CSSTransition in={wordsStore.isLoading} timeout={1000} classNames="Loader" mountOnEnter unmountOnExit>
@@ -42,7 +46,7 @@ const App = observer((props) => {
             </CSSTransition>
 
             <div className="App">
-                <Header />
+                <Header onLogoClick={handleLogoClick} />
                 <Routes>
                     <Route path="/" element={<SettingMode onCategorySelect={handleCategorySelect} />} />
                     <Route path="/words/*" element={<AllTheWords wordsStore={wordsStore} />} />

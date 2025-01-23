@@ -11,8 +11,7 @@ export default function ButtonCancel({ onClickCancel }){
     }
 
     return(
-        <img className = "Button ButtonCancel" src = { Cancel} alt = "кнопка изменить" onClick = { cancelPressed }/>
+        <img className = "Button ButtonCancel" src = { Cancel} alt = "Cancel Button" onClick = { cancelPressed }/>
     );
 
 }
-
