@@ -71,7 +71,7 @@ const Login = () => {
                 <button type="submit">{isLogin ? 'Login' : 'Sign Up'}</button>
             </form>
             <p>
-                {isLogin ? "Don't have an account?" : 'Already have an account?'}{' '}
+                {isLogin ? 'Don\'t have an account?' : 'Already have an account?'}{' '}
                 <button type="button" onClick={() => setIsLogin(!isLogin)}>
                     {isLogin ? 'Sign Up' : 'Login'}
                 </button>
