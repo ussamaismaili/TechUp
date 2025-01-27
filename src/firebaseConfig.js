@@ -13,7 +13,7 @@ const firebaseConfig = {
   authDomain: 'techup-fcf59.firebaseapp.com',
   projectId: 'techup-fcf59',
   storageBucket: 'techup-fcf59.firebasestorage.app',
-  messagingSenderId: "23853575639",
+  messagingSenderId: '23853575639',
   appId: '1:23853575639:web:9dc3f0ad056e3a9ef8ef92',
   measurementId: 'G-4F8P97916L'
 };

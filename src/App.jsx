@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import { observer } from 'mobx-react-lite';
 import { CSSTransition } from 'react-transition-group';
-import { onAuthStateChanged } from "firebase/auth";
+import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from './firebaseConfig';
 
 import Header from './assets/components/Header';
