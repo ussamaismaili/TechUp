@@ -1,11 +1,14 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { observer } from 'mobx-react-lite';
-import { onAuthStateChanged, signInWithEmailAndPassword, signOut } from 'firebase/auth';
-import { auth } from '../../../firebaseConfig';
+import { onAuthStateChanged, signInWithEmailAndPassword, createUserWithEmailAndPassword, signOut } from 'firebase/auth';
+import { doc, setDoc } from 'firebase/firestore';
+import { auth, db } from '../../../firebaseConfig';
 import './Dashboard.scss';
 import './Login.scss';
 
 const Dashboard = observer(({ wordsStore }) => {
+    const [isLogin, setIsLogin] = useState(true);
+    const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState(null);
@@ -29,10 +32,20 @@ const Dashboard = observer(({ wordsStore }) => {
         return () => unsubscribe();
     }, [fetchUserData]);
 
-    const handleLogin = async (e) => {
+    const handleAuth = async (e) => {
         e.preventDefault();
+        setError(null);
         try {
-            await signInWithEmailAndPassword(auth, email, password);
+            if (isLogin) {
+                await signInWithEmailAndPassword(auth, email, password);
+            } else {
+                const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+                const newUser = userCredential.user;
+                await setDoc(doc(db, 'users', newUser.uid), {
+                    username: username,
+                    email: email
+                });
+            }
         } catch (err) {
             setError(err.message);
         }
@@ -48,9 +61,20 @@ const Dashboard = observer(({ wordsStore }) => {
 
     if (!user) {
         return (
-            <div className="login">
-                <h1>Login</h1>
-                <form onSubmit={handleLogin}>
+            <div className="auth">
+                <h1>Login or Signup to see and track your daily progress</h1>
+                <form onSubmit={handleAuth}>
+                    {!isLogin && (
+                        <div className="form-group">
+                            <label>Username</label>
+                            <input 
+                                type="text" 
+                                value={username} 
+                                onChange={(e) => setUsername(e.target.value)} 
+                                required 
+                            />
+                        </div>
+                    )}
                     <div className="form-group">
                         <label>Email</label>
                         <input 
@@ -70,8 +94,14 @@ const Dashboard = observer(({ wordsStore }) => {
                         />
                     </div>
                     {error && <p className="error">{error}</p>}
-                    <button type="submit">Login</button>
+                    <button type="submit">{isLogin ? 'Login' : 'Sign Up'}</button>
                 </form>
+                <p>
+                    {isLogin ? "Don't have an account?" : 'Already have an account?'}{' '}
+                    <button type="button" onClick={() => setIsLogin(!isLogin)}>
+                        {isLogin ? 'Sign Up' : 'Login'}
+                    </button>
+                </p>
             </div>
         );
     }
@@ -81,7 +111,8 @@ const Dashboard = observer(({ wordsStore }) => {
     return (
         <div className="dashboard">
             <h1>Dashboard</h1>
-            <button onClick={handleSignOut}>Sign Out</button>
+            <h2>Hello, {user.email}!</h2>
+            <button className="signout-button" onClick={handleSignOut}>Sign Out</button>
             <div className="statistics">
                 <div className="stat">
                     <h2>Total Cards</h2>

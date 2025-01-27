@@ -27,6 +27,13 @@
         font-size: calc((100vw + 256px) / 128);
         font-weight: 900;
         text-transform: uppercase;
+        position: relative; // Added to position the sign-out button
+
+        &.dashboard-nav {
+            &:hover .signout-button {
+                display: block;
+            }
+        }
     }
 
     &__logo {
@@ -85,4 +92,21 @@
 
 .dashboard-nav {
     grid-area: dashboard;
+
+    .signout-button {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 10px 20px;
+        background-color: $main-color;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        white-space: nowrap;
+
+        &:hover {
+            background-color: darken($main-color, 10%);
+        }
+    }
 }

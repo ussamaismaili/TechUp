@@ -1,4 +1,3 @@
-// src/components/Header.jsx
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { onAuthStateChanged, signOut } from 'firebase/auth';
@@ -43,14 +42,10 @@ export default function Header({ onLogoClick }) {
                     <Link to="/game" className="Header__link Link">Training</Link>
                 </li>
                 {user ? (
-                    <>
-                        <li className="Header__menu dashboard-nav">
-                            <Link to="/dashboard" className="Header__link Link">Dashboard</Link>
-                        </li>
-                        <li className="Header__menu">
-                            <button onClick={handleSignOut} className="Header__link Link">Sign Out</button>
-                        </li>
-                    </>
+                    <li className="Header__menu dashboard-nav">
+                        <Link to="/dashboard" className="Header__link Link">Dashboard</Link>
+                        <button onClick={handleSignOut} className="Header__link Link signout-button">Sign Out</button>
+                    </li>
                 ) : (
                     <li className="Header__menu login-nav">
                         <Link to="/login" className="Header__link Link">Login</Link>
