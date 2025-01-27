@@ -2,6 +2,8 @@ import { makeAutoObservable, runInAction } from 'mobx';
 import bigData from '../data/bigdata.json';
 import aiData from '../data/ai_terms.json';
 import cloudComputingData from '../data/cloud_computing.json';
+import { doc, getDoc, setDoc } from "firebase/firestore";
+import { db, auth } from '../../firebaseConfig'; // Import auth from your firebaseConfig
 
 class WordsStore {
     wordsAPI = [];
@@ -107,16 +109,20 @@ class WordsStore {
 
     markAsKnown = (word) => {
         runInAction(() => {
-            if (!this.knownWords.includes(word)) {
+            if (!this.knownWords.includes(word) && !this.dontKnowWords.includes(word)) {
                 this.knownWords.push(word);
+                this.dontKnowWords = this.dontKnowWords.filter(w => w.id !== word.id);
+                this.saveProgress();
             }
         });
     };
 
     markAsDontKnow = (word) => {
         runInAction(() => {
-            if (!this.dontKnowWords.includes(word)) {
+            if (!this.dontKnowWords.includes(word) && !this.knownWords.includes(word)) {
                 this.dontKnowWords.push(word);
+                this.knownWords = this.knownWords.filter(w => w.id !== word.id);
+                this.saveProgress();
             }
         });
     };
@@ -128,6 +134,47 @@ class WordsStore {
             dontKnowCount: this.dontKnowWords.length,
         };
     };
+
+    setProgress = (progress) => {
+        runInAction(() => {
+            this.knownWords = progress.knownWords || [];
+            this.dontKnowWords = progress.dontKnowWords || [];
+        });
+    };
+
+    async saveProgress() {
+        try {
+            const user = auth.currentUser;
+            if (user) {
+                const userDoc = doc(db, "users", user.uid);
+                await setDoc(userDoc, {
+                    knownWords: this.knownWords,
+                    dontKnowWords: this.dontKnowWords
+                });
+            }
+        } catch (error) {
+            console.error("Error saving progress: ", error);
+        }
+    }
+
+    async loadProgress() {
+        try {
+            const user = auth.currentUser;
+            if (user) {
+                const userDoc = doc(db, "users", user.uid);
+                const userSnap = await getDoc(userDoc);
+                if (userSnap.exists()) {
+                    const userData = userSnap.data();
+                    this.setProgress({
+                        knownWords: userData.knownWords || [],
+                        dontKnowWords: userData.dontKnowWords || [],
+                    });
+                }
+            }
+        } catch (error) {
+            console.error("Error loading progress: ", error);
+        }
+    }
 
     async loadWords(category) {
         this.isLoading = true;
