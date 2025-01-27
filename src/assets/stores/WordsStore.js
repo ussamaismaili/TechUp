@@ -2,7 +2,7 @@ import { makeAutoObservable, runInAction } from 'mobx';
 import bigData from '../data/bigdata.json';
 import aiData from '../data/ai_terms.json';
 import cloudComputingData from '../data/cloud_computing.json';
-import { doc, getDoc, setDoc } from "firebase/firestore";
+import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { db, auth } from '../../firebaseConfig'; // Import auth from your firebaseConfig
 
 class WordsStore {
@@ -146,14 +146,14 @@ class WordsStore {
         try {
             const user = auth.currentUser;
             if (user) {
-                const userDoc = doc(db, "users", user.uid);
+                const userDoc = doc(db, 'users', user.uid);
                 await setDoc(userDoc, {
                     knownWords: this.knownWords,
                     dontKnowWords: this.dontKnowWords
                 });
             }
         } catch (error) {
-            console.error("Error saving progress: ", error);
+            console.error('Error saving progress: ', error);
         }
     }
 
@@ -161,7 +161,7 @@ class WordsStore {
         try {
             const user = auth.currentUser;
             if (user) {
-                const userDoc = doc(db, "users", user.uid);
+                const userDoc = doc(db, 'users', user.uid);
                 const userSnap = await getDoc(userDoc);
                 if (userSnap.exists()) {
                     const userData = userSnap.data();
@@ -172,7 +172,7 @@ class WordsStore {
                 }
             }
         } catch (error) {
-            console.error("Error loading progress: ", error);
+            console.error('Error loading progress: ', error);
         }
     }
 

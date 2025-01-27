@@ -1,7 +1,7 @@
 // src/components/Header.jsx
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { onAuthStateChanged, signOut } from "firebase/auth";
+import { onAuthStateChanged, signOut } from 'firebase/auth';
 import { auth } from '../../firebaseConfig';
 import './Header.scss';
 import logo from '../images/logo.svg';
@@ -20,7 +20,7 @@ export default function Header({ onLogoClick }) {
         try {
             await signOut(auth);
         } catch (error) {
-            console.error("Error signing out: ", error);
+            console.error('Error signing out: ', error);
         }
     };
 

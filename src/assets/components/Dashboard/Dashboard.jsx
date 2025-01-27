@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { observer } from 'mobx-react-lite';
-import { onAuthStateChanged, signInWithEmailAndPassword, signOut } from "firebase/auth";
+import { onAuthStateChanged, signInWithEmailAndPassword, signOut } from 'firebase/auth';
 import { auth } from '../../../firebaseConfig';
 import './Dashboard.scss';
 import './Login.scss';
@@ -15,7 +15,7 @@ const Dashboard = observer(({ wordsStore }) => {
         try {
             await wordsStore.loadProgress();
         } catch (error) {
-            console.error("Error fetching user data: ", error);
+            console.error('Error fetching user data: ', error);
         }
     }, [wordsStore]);
 
@@ -42,7 +42,7 @@ const Dashboard = observer(({ wordsStore }) => {
         try {
             await signOut(auth);
         } catch (error) {
-            console.error("Error signing out: ", error);
+            console.error('Error signing out: ', error);
         }
     };
 
