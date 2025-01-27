@@ -48,5 +48,105 @@
         "english": "Serverless Computing",
         "transcription": "ˈsɜːrvərlɪs kəmˈpjuːtɪŋ",
         "french": "Informatique sans serveur"
+    },
+    {
+        "english": "Cloud Migration",
+        "transcription": "klaʊd maɪˈɡreɪʃən",
+        "french": "Migration vers le nuage"
+    },
+    {
+        "english": "Edge Computing",
+        "transcription": "ɛdʒ kəmˈpjuːtɪŋ",
+        "french": "Informatique en périphérie"
+    },
+    {
+        "english": "Elasticity",
+        "transcription": "ɪˌlæˈstɪsɪti",
+        "french": "Élasticité"
+    },
+    {
+        "english": "Cloud Security",
+        "transcription": "klaʊd sɪˈkjʊərəti",
+        "french": "Sécurité du nuage"
+    },
+    {
+        "english": "Multi-Cloud",
+        "transcription": "ˈmʌlti klaʊd",
+        "french": "Multi-nuage"
+    },
+    {
+        "english": "Cloud Scalability",
+        "transcription": "klaʊd ˌskeɪləˈbɪlɪti",
+        "french": "Évolutivité du nuage"
+    },
+    {
+        "english": "Disaster Recovery",
+        "transcription": "dɪˈzæstər rɪˈkʌvəri",
+        "french": "Récupération après sinistre"
+    },
+    {
+        "english": "Containerization",
+        "transcription": "kənˌteɪnəraɪˈzeɪʃən",
+        "french": "Conteneurisation"
+    },
+    {
+        "english": "Cloud Backup",
+        "transcription": "klaʊd ˈbækʌp",
+        "french": "Sauvegarde en nuage"
+    },
+    {
+        "english": "Cloud Networking",
+        "transcription": "klaʊd ˈnɛtwɜːrkɪŋ",
+        "french": "Réseautage en nuage"
+    },
+    {
+        "english": "Cloud Deployment",
+        "transcription": "klaʊd dɪˈplɔɪmənt",
+        "french": "Déploiement en nuage"
+    },
+    {
+        "english": "Cloud Management",
+        "transcription": "klaʊd ˈmænɪdʒmənt",
+        "french": "Gestion du nuage"
+    },
+    {
+        "english": "Virtualization",
+        "transcription": "ˌvɜːrtʃuəlaɪˈzeɪʃən",
+        "french": "Virtualisation"
+    },
+    {
+        "english": "Pay-as-you-go",
+        "transcription": "peɪ æz juː ˈɡoʊ",
+        "french": "Paiement à l'utilisation"
+    },
+    {
+        "english": "Load Balancing",
+        "transcription": "loʊd ˈbælənsɪŋ",
+        "french": "Équilibrage de charge"
+    },
+    {
+        "english": "Cloud Orchestration",
+        "transcription": "klaʊd ˌɔːrkɪˈstreɪʃən",
+        "french": "Orchestration en nuage"
+    },
+    {
+        "english": "High Availability",
+        "transcription": "haɪ əˌveɪləˈbɪlɪti",
+        "french": "Haute disponibilité"
+    },
+    {
+        "english": "Cloud Provider",
+        "transcription": "klaʊd prəˈvaɪdər",
+        "french": "Fournisseur de nuage"
+    },
+    {
+        "english": "Content Delivery Network (CDN)",
+        "transcription": "ˈkɒntɛnt dɪˈlɪvəri ˈnɛtwɜːrk",
+        "french": "Réseau de diffusion de contenu (CDN)"
+    },
+    {
+        "english": "Cloud Analytics",
+        "transcription": "klaʊd ˌænəˈlɪtɪks",
+        "french": "Analytique en nuage"
     }
 ]

@@ -48,5 +48,105 @@
         "english": "Unsupervised Learning",
         "transcription": "ʌnˈsuːpərˌvaɪzd ˈlɜːrnɪŋ",
         "french": "Apprentissage non supervisé"
+    },
+    {
+        "english": "Artificial Neural Network",
+        "transcription": "ˌɑːrˈtɪfɪʃl ˈnʊrəl ˈnɛtwɜːrk",
+        "french": "Réseau neuronal artificiel"
+    },
+    {
+        "english": "AI Ethics",
+        "transcription": "eɪ aɪ ˈɛθɪks",
+        "french": "Éthique de l'IA"
+    },
+    {
+        "english": "Cognitive Computing",
+        "transcription": "ˈkɒɡnɪtɪv kəmˈpjuːtɪŋ",
+        "french": "Informatique cognitive"
+    },
+    {
+        "english": "AI Algorithm",
+        "transcription": "eɪ aɪ ˈælɡərɪðəm",
+        "french": "Algorithme IA"
+    },
+    {
+        "english": "Predictive Modeling",
+        "transcription": "prɪˈdɪktɪv ˈmɒdəlɪŋ",
+        "french": "Modélisation prédictive"
+    },
+    {
+        "english": "Transfer Learning",
+        "transcription": "ˈtrænsfɜːr ˈlɜːrnɪŋ",
+        "french": "Apprentissage par transfert"
+    },
+    {
+        "english": "Edge AI",
+        "transcription": "ɛdʒ eɪ aɪ",
+        "french": "IA en périphérie"
+    },
+    {
+        "english": "AI Model",
+        "transcription": "eɪ aɪ ˈmɒdəl",
+        "french": "Modèle IA"
+    },
+    {
+        "english": "AI Training",
+        "transcription": "eɪ aɪ ˈtreɪnɪŋ",
+        "french": "Entraînement de l'IA"
+    },
+    {
+        "english": "Big Data AI",
+        "transcription": "bɪɡ ˈdeɪtə eɪ aɪ",
+        "french": "IA pour les grandes données"
+    },
+    {
+        "english": "Speech Recognition",
+        "transcription": "spiːtʃ ˌrɛkəɡˈnɪʃən",
+        "french": "Reconnaissance vocale"
+    },
+    {
+        "english": "AI Chatbot",
+        "transcription": "eɪ aɪ ˈtʃætˌbɒt",
+        "french": "Chatbot IA"
+    },
+    {
+        "english": "AI Assistant",
+        "transcription": "eɪ aɪ əˈsɪstənt",
+        "french": "Assistant IA"
+    },
+    {
+        "english": "AI Research",
+        "transcription": "eɪ aɪ ˈriːsɜːrtʃ",
+        "french": "Recherche sur l'IA"
+    },
+    {
+        "english": "AI Optimization",
+        "transcription": "eɪ aɪ ˌɒptɪmaɪˈzeɪʃən",
+        "french": "Optimisation de l'IA"
+    },
+    {
+        "english": "AI Hardware",
+        "transcription": "eɪ aɪ ˈhɑːrdˌwɛr",
+        "french": "Matériel IA"
+    },
+    {
+        "english": "AI Bias",
+        "transcription": "eɪ aɪ ˈbaɪəs",
+        "french": "Biais de l'IA"
+    },
+    {
+        "english": "Autonomous Systems",
+        "transcription": "ɔːˈtɒnəməs ˈsɪstəmz",
+        "french": "Systèmes autonomes"
+    },
+    {
+        "english": "AI Scalability",
+        "transcription": "eɪ aɪ ˌskeɪləˈbɪlɪti",
+        "french": "Évolutivité de l'IA"
+    },
+    {
+        "english": "AI Benchmarking",
+        "transcription": "eɪ aɪ ˈbɛnʧˌmɑːrkɪŋ",
+        "french": "Évaluation de l'IA"
     }
 ]
