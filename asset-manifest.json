@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/TechUp/static/css/main.505329e2.css",
-    "main.js": "/TechUp/static/js/main.1ebfd247.js",
+    "main.css": "/TechUp/static/css/main.1e09f725.css",
+    "main.js": "/TechUp/static/js/main.c3fb5f92.js",
     "static/media/ai.png": "/TechUp/static/media/ai.9fd1d02550aa16dd9430.png",
     "static/media/Montserrat-Regular.ttf": "/TechUp/static/media/Montserrat-Regular.ceb11275ab638627a643.ttf",
     "static/media/cloudComputing.png": "/TechUp/static/media/cloudComputing.803fd056fef4384c1f95.png",
@@ -18,11 +18,11 @@
     "static/media/save.svg": "/TechUp/static/media/save.ba0933f245122279494deab273580d5a.svg",
     "static/media/arrow-forward.svg": "/TechUp/static/media/arrow-forward.b70b257eb0a1c65e6734f3028e783fb0.svg",
     "static/media/arrow-back.svg": "/TechUp/static/media/arrow-back.c00b62c530898547d93758f8bf17cd89.svg",
-    "main.505329e2.css.map": "/TechUp/static/css/main.505329e2.css.map",
-    "main.1ebfd247.js.map": "/TechUp/static/js/main.1ebfd247.js.map"
+    "main.1e09f725.css.map": "/TechUp/static/css/main.1e09f725.css.map",
+    "main.c3fb5f92.js.map": "/TechUp/static/js/main.c3fb5f92.js.map"
   },
   "entrypoints": [
-    "static/css/main.505329e2.css",
-    "static/js/main.1ebfd247.js"
+    "static/css/main.1e09f725.css",
+    "static/js/main.c3fb5f92.js"
   ]
 }
