@@ -1,6 +1,6 @@
 @import "../../../styles/variables.scss";
 
-.TrainingMode{
+.TrainingMode {
     width: 60vw;
     height: 80vh;
     margin: auto;
@@ -8,9 +8,23 @@
     font-family: $default-font;
     font-size: $default-font-size;
     font-weight: 500;
+
+    // Tablet Layout
+    @media (max-width: 768px) {
+        width: 80vw;
+        height: auto;
+        font-size: calc(#{$default-font-size} * 0.9);
+    }
+
+    // Mobile Layout
+    @media (max-width: 480px) {
+        width: 95vw;
+        height: auto;
+        font-size: calc(#{$default-font-size} * 0.8);
+    }
 }
 
-.Buttons{
+.Buttons {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,4 +32,18 @@
     width: 70%;
     height: 14%;
     margin: auto;
+
+    // Tablet Layout
+    @media (max-width: 768px) {
+        width: 80%;
+        height: 5vh !important;
+        flex-direction: row;
+    }
+
+    // Mobile Layout
+    @media (max-width: 480px) {
+        width: 70%;
+        height: 4.3vh !important;
+        flex-direction: row;
+    }
 }

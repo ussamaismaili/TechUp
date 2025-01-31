@@ -1,17 +1,17 @@
 @import "../../../styles/variables.scss";
 
-.SettingMode{
+.SettingMode {
     width: 60vw;
     margin: auto;
     padding: 10px;
 
     font-family: $default-font;
 
-    h1{
+    h1 {
         margin: 2vh 0 2vh 0;
-
-        font-size: calc(( 100vw - 142px) / 71);
+        font-size: calc((100vw - 142px) / 71);
     }
+
     p {
         font-size: $default-font-size;
         line-height: 150%;
@@ -26,5 +26,25 @@
     width: 100%;
     margin: 2vh 0 2vh 0;
     margin-top: 12%;
-    
+
+    // Default: 3 columns
+    & > * {
+        // flex: 1 1 calc(33.333% - 10px);
+        margin: 1px;  // Optional: To add some spacing between items
+    }
+
+    // Tablet: 2 columns
+    @media (max-width: 768px) {
+        & > * {
+            flex: 1 1 calc(50% - 10px);
+            margin: 5px;
+        }
+    }
+
+    // Mobile: 1 column
+    @media (max-width: 480px) {
+        & > * {
+            flex: 1 1 100%;
+        }
+    }
 }

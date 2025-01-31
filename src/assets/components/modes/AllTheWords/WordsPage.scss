@@ -56,4 +56,54 @@
             }
         }
     }
+
+    // Tablet Layout
+    @media (max-width: 768px) {
+        width: 90vw;
+
+        .WordsPage__nav {
+            flex-direction: row;
+            align-items: center;
+
+            a {
+                font-size: 1em;
+                padding: 8px 16px;
+                margin-bottom: 10px;
+            }
+        }
+
+        .WordsPage__category {
+            &__title {
+                font-size: 1.3em;
+            }
+
+            &__list li {
+                padding: 8px;
+                font-size: 1.7em;
+            }
+        }
+    }
+
+    // Mobile Layout
+    @media (max-width: 480px) {
+        width: 95vw;
+        padding: 10px;
+
+        .WordsPage__nav {
+            a {
+                font-size: 1.7em;
+                padding: 6px 12px;
+            }
+        }
+
+        .WordsPage__category {
+            &__title {
+                font-size: 1.1em;
+            }
+
+            &__list li {
+                padding: 6px;
+            }
+        }
+    }
 }

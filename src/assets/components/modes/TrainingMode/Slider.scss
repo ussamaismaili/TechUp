@@ -8,6 +8,19 @@
     width: 90%;
     height: 80%;
     margin: auto;
+
+    // Tablet Layout
+    @media (max-width: 768px) {
+        flex-direction: row;
+        height: auto;
+    }
+
+    // Mobile Layout
+    @media (max-width: 480px) {
+        width: 75%;
+        height: auto;
+        margin: 0;
+    }
 }
 
 .Slider-wrapper {
@@ -19,6 +32,19 @@
     margin: auto;
     width: 80%;
     height: 100%;
+
+    // Tablet Layout
+    @media (max-width: 768px) {
+        width: 100%;
+        height: auto;
+    }
+
+    // Mobile Layout
+    @media (max-width: 480px) {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
 }
 
 .Slider-line {
@@ -26,25 +52,63 @@
     height: 48vh;
 
     overflow: hidden;
+
+    // Tablet Layout
+    @media (max-width: 768px) {
+        width: 50vh;
+        height: 36vh;
+    }
+
+    // Mobile Layout
+    @media (max-width: 480px) {
+        width: 100%;
+        height: auto;
+        overflow-x: scroll; // Allow horizontal scrolling for the frame
+    }
 }
 
 .Slider-frame {
     position: relative;
     display: flex;
 
-    width: calc( 48vh * 9 );
+    width: calc(48vh * 9);
     height: 48vh;
 
     transition: all ease 1s;
+
+    // Tablet Layout
+    @media (max-width: 768px) {
+        width: calc(36vh * 9);
+        height: 36vh;
+    }
+
+    // Mobile Layout
+    @media (max-width: 480px) {
+        width: 100%;
+        height: auto;
+        flex-wrap: nowrap; // Prevent wrapping of the content
+    }
 }
 
-.buttons-slider{
+.buttons-slider {
     width: 10%;
     height: 15%;
-
+    z-index: 2;
     opacity: 0.7;
     transition-duration: 0.3s;
     cursor: pointer;
+
+    // Tablet Layout
+    @media (max-width: 768px) {
+        width: 12%;
+        height: auto;
+    }
+
+    // Mobile Layout
+    @media (max-width: 480px) {
+        width: 15%;
+        height: auto;
+    }
 }
 
 .buttons-slider:hover {

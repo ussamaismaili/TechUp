@@ -1,6 +1,6 @@
 @import "../../../styles/variables.scss";
 
-.WordCard{
+.WordCard {
     position: relative;
     display: flex;
     justify-content: center;
@@ -9,9 +9,26 @@
     width: 67vh;
     height: 48vh;
 
-    img{
+    img {
         height: 100%;
         padding: 5%;
+    }
+
+    // Tablet Layout
+    @media (max-width: 768px) {
+        width: 50vh;
+        height: 36vh;
+    }
+
+    // Mobile Layout
+    @media (max-width: 480px) {
+        width: max-content;
+        height: auto;
+        img {
+            width: 34vh;
+            height: auto;
+            padding: 3%;
+        }
     }
 }
 
@@ -21,15 +38,40 @@
     font-family: "ArchivoBlack", sans-serif;
     font-size: calc((100vw + 750px) / 67);
     max-width: 53vh;
+
+    // Tablet Layout
+    @media (max-width: 768px) {
+        top: 12vh;
+        font-size: calc((100vw + 500px) / 57);
+        max-width: 40vh;
+    }
+
+    // Mobile Layout
+    @media (max-width: 480px) {
+        top: 10vh;
+        font-size: calc((100vw + 500px) / 52);
+        max-width: 70vw;
+    }
 }
 
-.word-translate{
+.word-translate {
     position: absolute;
     bottom: 22%;
-
-    font-size: calc(( 100vw - 142px) / 71);
+    font-size: calc((100vw - 142px) / 71);
     font-weight: 500;
     color: rgb(105, 105, 105);
+
+    // Tablet Layout
+    @media (max-width: 768px) {
+        bottom: 18%;
+        font-size: calc((100vw - 200px) / 13);
+    }
+
+    // Mobile Layout
+    @media (max-width: 480px) {
+        bottom: 15%;
+        font-size: calc((100vw - 250px) / 13);
+    }
 }
 
 .button-check {
@@ -48,12 +90,35 @@
     color: white;
     cursor: pointer;
     transition-duration: 0.4s;
+
+    // Tablet Layout
+    @media (max-width: 768px) {
+        bottom: 18%;
+        width: 30%;
+    }
+
+    // Mobile Layout
+    @media (max-width: 480px) {
+        bottom: 15%;
+        width: 40%;
+    }
 }
 
 .button-check:hover {
     width: 32%;
     transition: all ease 0.4s;
+
+    // Tablet Layout
+    @media (max-width: 768px) {
+        width: 35%;
+    }
+
+    // Mobile Layout
+    @media (max-width: 480px) {
+        width: 45%;
+    }
 }
+
 .button-check:focus {
     outline: none;
     background-color: rgb(18, 148, 77);

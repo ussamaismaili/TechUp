@@ -58,3 +58,23 @@
         }
     }
 }
+ // Mobile Layout
+ @media  (max-width: 768px) {
+    .AllTheWords__title div {
+        font-size: calc((100vw + 256px) / 90);
+    }
+    .AllTheWords__buttonAdd {
+        font-size: calc((100vw + 256px) / 57);
+        width: 75%;
+    }
+ }
+
+ @media (max-width: 480px){
+    .AllTheWords__title div {
+        font-size: calc((100vw + 256px) / 72);
+    }
+    .AllTheWords__buttonAdd {
+        font-size: calc((100vw + 256px) / 57);
+        width: 75%;
+    }
+ }
