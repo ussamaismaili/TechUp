@@ -16,6 +16,18 @@
         font-size: $default-font-size;
         line-height: 150%;
     }
+   
+    @media (max-width: 768px) {
+        h1 {
+            margin: 2vh 0 2vh 0;
+            font-size: calc((100vw - 142px) / 15);
+        }
+    
+        p {
+            font-size: calc((100vw - 142px) / 21);
+            line-height: 150%;
+        }
+    }
 }
 
 .SettingMode__container {
