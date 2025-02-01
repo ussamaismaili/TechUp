@@ -8,7 +8,7 @@
     margin-bottom: 5%;
 }
 
-.Header {
+.large-screen-nav {
     display: grid;
     grid-template-columns: 40% 1fr 1fr 1fr;
     grid-template-areas: "logo all-words train dashboard";
@@ -18,7 +18,7 @@
     margin: auto;
     padding: 10px;
 
-    &__menu {
+    .Header__menu {
         display: flex;
         align-items: center;
         justify-content: flex-end;
@@ -36,7 +36,7 @@
         }
     }
 
-    &__logo {
+    .Header__logo {
         display: flex;
         grid-area: logo;
         height: 100%;
@@ -70,6 +70,10 @@
         list-style-type: none;
         cursor: pointer;
     }
+}
+
+.small-screen-nav {
+    display: none;
 }
 
 .Header__link:hover {
@@ -108,5 +112,202 @@
         &:hover {
             background-color: darken($main-color, 10%);
         }
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.Header__logo {
+    display: flex;
+    height: 100%;
+
+    img {
+        height: 7vh;
+    }
+
+    &-text-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        padding-left: 10px;
+        font-family: $logo-font;
+        font-weight: 900;
+        font-size: calc((100vw) / 128);
+
+        div {
+            font-family: $default-font;
+            font-weight: 100;
+        }
+
+        span {
+            color: $main-color;
+        }
+    }
+}
+
+.links {
+    .icon {
+        width: 33px;
+        display: none; /* Hidden by default on large screens */
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        cursor: pointer;
+        z-index: 2;
+
+        span {
+            background-color: #333;
+            margin-bottom: 5px;
+            height: 3px;
+            width: 100%;
+            transition: 0.3s;
+
+            &:nth-child(2) {
+                width: 70%;
+            }
+        }
+
+        &.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        &.active span:first-child {
+            transform: translateY(8px) rotate(45deg);
+        }
+
+        &.active span:last-child {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background-color: #f6f6f6de;
+        position: absolute;
+        right: 0;
+        min-width: 200px;
+        top: calc(100% + 10px);
+        display: none; /* Hidden by default on small screens */
+        margin-right: 15px; /* Adjusted margin */
+
+        &.active {
+            display: block;
+        }
+
+        li a {
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            color: #333;
+            transition: 0.3s;
+
+            &:hover {
+                color: $main-color;
+                font-weight: bold;
+                padding-left: 25px; /* Added padding on hover for small screens */
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .small-screen-nav {
+        display: none;
+    }
+
+    .large-screen-nav {
+        display: grid;
+        grid-template-columns: 40% 1fr 1fr 1fr;
+        grid-template-areas: "logo all-words train dashboard";
+        align-items: center;
+        width: 60vw;
+        height: 10vh;
+        margin: auto;
+        padding: 10px;
+
+        .Header__menu {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 10%;
+            font-family: $default-font;
+            font-size: calc((100vw + 256px) / 128);
+            font-weight: 900;
+            text-transform: uppercase;
+            position: relative; // Added to position the sign-out button
+
+            &.dashboard-nav {
+                &:hover .signout-button {
+                    display: block;
+                }
+            }
+        }
+
+        .links ul {
+            display: flex !important; /* Flex display on larger screens */
+            background-color: transparent;
+            top: 10px;
+            position: static;
+            margin-right: 0;
+
+            li a {
+                padding: 0;
+                margin-right: 15px;
+
+                &:hover {
+                    margin-top: 4px;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .large-screen-nav {
+        display: none;
+    }
+    .container{
+        justify-content:space-around;
+    }
+
+    .small-screen-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: initial;
+        width: 100%;
+    }
+
+    .links .icon {
+        display: flex !important; /* Show hamburger icon on small screens */
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .Header__menu {
+        justify-content: center;
+        width: 100%;
+    }
+    .Header__logo-text-wrapper{
+        font-size: 0.85vh;
+    }
+    .links ul{
+        top:85%;
     }
 }
