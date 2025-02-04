@@ -10,7 +10,7 @@ export default function NotFoundPage(){
             <h2 className = "NotFoundPage__title">Page not found</h2>
             <img className = "NotFoundPage__img" src = { cat } alt = "Cat in a box with a sign 404" />
             <p className = "NotFoundPage__question">Let's get back to 
-                <Link to = "/" className = "NotFoundPage__Link">choice of cards</Link>?</p>
+                <Link to = "/TechUp" className = "NotFoundPage__Link">choice of cards</Link>?</p>
         </main>
     );
 }
