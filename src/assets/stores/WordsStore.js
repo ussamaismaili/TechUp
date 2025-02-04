@@ -32,9 +32,9 @@ class WordsStore {
     }
 
     getCategoryFromFile(word) {
-        if (bigData.includes(word)) return 'bigData';
+        if (bigData.includes(word)) return 'Big Data';
         if (aiData.includes(word)) return 'AI';
-        if (cloudComputingData.includes(word)) return 'cloudComputing';
+        if (cloudComputingData.includes(word)) return 'Cloud Computing';
         return 'unknown';
     }
 
@@ -184,19 +184,19 @@ class WordsStore {
             let response;
             switch (category) {
                 case 'Big Data':
-                    response = await import('../data/bigdata.json');
+                    response = bigData;
                     break;
                 case 'AI':
-                    response = await import('../data/ai_terms.json');
+                    response = aiData;
                     break;
                 case 'Cloud Computing':
-                    response = await import('../data/cloud_computing.json');
+                    response = cloudComputingData;
                     break;
                 default:
                     throw new Error('Invalid category');
             }
 
-            const words = response.default.map((word, index) => ({
+            const words = response.map((word, index) => ({
                 ...word,
                 id: index + 1,
                 translation: word.french || word.translation,

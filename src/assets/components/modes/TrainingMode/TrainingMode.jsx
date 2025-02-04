@@ -11,8 +11,15 @@ export default function TrainingMode({ wordsStore, selectedCategory }) {
     const [currentSlide, setCurrentSlide] = useState(0);
 
     useEffect(() => {
+        console.log('Selected category in TrainingMode:', selectedCategory);
+        
+        // Load words based on the selected category
+        if (selectedCategory) {
+            wordsStore.loadWords(selectedCategory);
+        }
+
         setCardReactionArr(Array(wordsStore.wordsAPI.length).fill(false));
-    }, [wordsStore.wordsAPI]);
+    }, [selectedCategory, wordsStore]);
 
     const markAsKnown = () => {
         wordsStore.markAsKnown(wordsStore.wordsAPI[currentSlide]);
@@ -33,6 +40,7 @@ export default function TrainingMode({ wordsStore, selectedCategory }) {
     };
 
     if (wordsStore.isLoading) {
+        console.log('Words store is loading in TrainingMode...');
         return <Loader />;
     }
 

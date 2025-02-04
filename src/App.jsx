@@ -42,6 +42,7 @@ const App = observer((props) => {
     }
 
     const handleCategorySelect = (category) => {
+        console.log('Selected category:', category);
         setSelectedCategory(category);
         navigate('/game');
     };
