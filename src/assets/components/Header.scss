@@ -10,8 +10,8 @@
 
 .large-screen-nav {
     display: grid;
-    grid-template-columns: 40% 1fr 1fr 1fr;
-    grid-template-areas: "logo all-words train dashboard";
+    grid-template-columns: 45% 1fr 1.5fr 1.8fr 1.2fr;
+    grid-template-areas: "logo home all-words train dashboard";
     align-items: center;
     width: 60vw;
     height: 10vh;
@@ -84,6 +84,10 @@
 .Header__link:active {
     color: rgb(244, 182, 18);
     transition: color 0.3s;
+}
+
+.home {
+    grid-area: home;
 }
 
 .words {
@@ -224,10 +228,10 @@
 
     .large-screen-nav {
         display: grid;
-        grid-template-columns: 40% 1fr 1fr 1fr;
-        grid-template-areas: "logo all-words train dashboard";
+        grid-template-columns: 45% 1fr 1.5fr 1.8fr 1.2fr;        
+        grid-template-areas: "logo home all-words train dashboard";
         align-items: center;
-        width: 60vw;
+        width: 66vw;
         height: 10vh;
         margin: auto;
         padding: 10px;
@@ -309,5 +313,17 @@
     }
     .links ul{
         top:85%;
+    }
+    .signout-button{
+        padding: 10px 20px;
+        background-color: $main-color;
+        color: #fff !important;
+        border: none;
+        cursor: pointer;
+        white-space: nowrap;
+
+        &:hover {
+            background-color: darken($main-color, 10%);
+        }
     }
 }

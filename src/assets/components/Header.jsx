@@ -51,7 +51,7 @@ export default function Header({ onLogoClick }) {
             {/* Large screen navigation */}
             <ul className="Header large-screen-nav">
                 <li>
-                    <Link to="/TechUp" className="Header__logo Link" onClick={onLogoClick}>
+                    <Link to="/" className="Header__logo Link" onClick={onLogoClick}>
                         <img src={logo} alt="Icon with cards" />
                         <div className="Header__logo-text-wrapper">
                             <div>ONLINE LEARNING</div>
@@ -59,11 +59,14 @@ export default function Header({ onLogoClick }) {
                         </div>
                     </Link>
                 </li>
+                <li className="Header__menu home">
+                    <Link to="/" className="Header__link Link">Home</Link>
+                </li>
                 <li className="Header__menu words">
                     <Link to="/words" className="Header__link Link">All words</Link>
                 </li>
                 <li className="Header__menu cards">
-                    <Link to="/game" className="Header__link Link">Training</Link>
+                    <Link to="/game" className="Header__link Link">Random Training</Link>
                 </li>
                 {user ? (
                     <li className="Header__menu dashboard-nav">
@@ -80,7 +83,7 @@ export default function Header({ onLogoClick }) {
             {/* Small screen navigation with hamburger menu */}
             <div className="Header small-screen-nav">
                 <div className="container">
-                    <Link to="/TechUp" className="Header__logo Link" onClick={onLogoClick}>
+                    <Link to="/" className="Header__logo Link" onClick={onLogoClick}>
                         <img src={logo} alt="Icon with cards" />
                         <div className="Header__logo-text-wrapper">
                             <div>ONLINE LEARNING</div>
@@ -94,8 +97,9 @@ export default function Header({ onLogoClick }) {
                             <span></span>
                         </span>
                         <ul id="nav" ref={navRef} className={isMenuOpen ? 'active' : ''}>
+                            <li><Link to="/" className="Header__link Link" onClick={closeMenu}>Home</Link></li>
                             <li><Link to="/words" className="Header__link Link" onClick={closeMenu}>All words</Link></li>
-                            <li><Link to="/game" className="Header__link Link" onClick={closeMenu}>Training</Link></li>
+                            <li><Link to="/game" className="Header__link Link" onClick={closeMenu}> Random Training</Link></li>
                             {user ? (
                                 <>
                                     <li><Link to="/dashboard" className="Header__link Link" onClick={closeMenu}>Dashboard</Link></li>

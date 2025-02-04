@@ -61,7 +61,7 @@ const App = observer((props) => {
             <div className="App">
                 <Header onLogoClick={handleLogoClick} />
                 <Routes>
-                    <Route path="/TechUp" element={<SettingMode onCategorySelect={handleCategorySelect} />} />
+                    <Route path="/" element={<SettingMode onCategorySelect={handleCategorySelect} />} />
                     <Route path="/words/*" element={<AllTheWords wordsStore={wordsStore} />} />
                     <Route path="/game" element={<TrainingMode wordsStore={wordsStore} selectedCategory={selectedCategory} />} />
                     <Route path="/dashboard" element={<Dashboard wordsStore={wordsStore} />} />
