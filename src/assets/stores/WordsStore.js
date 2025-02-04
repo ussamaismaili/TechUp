@@ -32,9 +32,9 @@ class WordsStore {
     }
 
     getCategoryFromFile(word) {
-        if (bigData.includes(word)) return 'Big Data';
+        if (bigData.includes(word)) return 'bigData';
         if (aiData.includes(word)) return 'AI';
-        if (cloudComputingData.includes(word)) return 'Cloud Computing';
+        if (cloudComputingData.includes(word)) return 'cloudComputing';
         return 'unknown';
     }
 
@@ -182,7 +182,7 @@ class WordsStore {
 
         try {
             let response;
-            switch (category) {
+            switch (category) { //edits to look later
                 case 'Big Data':
                     response = bigData;
                     break;
