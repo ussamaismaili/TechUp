@@ -51,7 +51,7 @@ export default function Header({ onLogoClick }) {
             {/* Large screen navigation */}
             <ul className="Header large-screen-nav">
                 <li>
-                    <Link to="/" className="Header__logo Link" onClick={onLogoClick}>
+                    <Link to="/TechUp" className="Header__logo Link" onClick={onLogoClick}>
                         <img src={logo} alt="Icon with cards" />
                         <div className="Header__logo-text-wrapper">
                             <div>ONLINE LEARNING</div>
@@ -80,7 +80,7 @@ export default function Header({ onLogoClick }) {
             {/* Small screen navigation with hamburger menu */}
             <div className="Header small-screen-nav">
                 <div className="container">
-                    <Link to="/" className="Header__logo Link" onClick={onLogoClick}>
+                    <Link to="/TechUp" className="Header__logo Link" onClick={onLogoClick}>
                         <img src={logo} alt="Icon with cards" />
                         <div className="Header__logo-text-wrapper">
                             <div>ONLINE LEARNING</div>

@@ -48,7 +48,7 @@ const App = observer((props) => {
 
     const handleLogoClick = () => {
         setSelectedCategory(null); // Reset the selected category when navigating back to the home page
-        navigate('/'); // Ensure navigation to the home page
+        navigate('/TechUp'); // Ensure navigation to the home page
     };
 
     return (
@@ -60,7 +60,7 @@ const App = observer((props) => {
             <div className="App">
                 <Header onLogoClick={handleLogoClick} />
                 <Routes>
-                    <Route path="/" element={<SettingMode onCategorySelect={handleCategorySelect} />} />
+                    <Route path="/TechUp" element={<SettingMode onCategorySelect={handleCategorySelect} />} />
                     <Route path="/words/*" element={<AllTheWords wordsStore={wordsStore} />} />
                     <Route path="/game" element={<TrainingMode wordsStore={wordsStore} selectedCategory={selectedCategory} />} />
                     <Route path="/dashboard" element={<Dashboard wordsStore={wordsStore} />} />
