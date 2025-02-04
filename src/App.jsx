@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Routes, Route, useNavigate } from 'react-router-dom';
+import { Routes, Route, useNavigate } from 'react-router-dom'; // Import necessary components from react-router-dom
 import { observer } from 'mobx-react-lite';
 import { CSSTransition } from 'react-transition-group';
 import { onAuthStateChanged } from 'firebase/auth';
@@ -48,7 +48,7 @@ const App = observer((props) => {
 
     const handleLogoClick = () => {
         setSelectedCategory(null); // Reset the selected category when navigating back to the home page
-        navigate('/TechUp'); // Ensure navigation to the home page
+        navigate('/'); // Ensure navigation to the home page
     };
 
     return (
